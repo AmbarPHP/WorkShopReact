@@ -1,0 +1,38 @@
+
+.CuadroCont{
+    display : flex;
+    flex-direction: row;
+    width: 100vh;
+    justify-content: space-around;
+    background-color: palevioletred;
+    flex-wrap: wrap
+}
+.TarjetaCont{
+    display : flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+}
+.ImgCont{
+    height: 20%;
+    background-color: #fff;
+    
+}
+.ContenidoCont{
+    height: 60%;
+    border-bottom: #333;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ContenidoCont span{ 
+    color:#fff;
+}
+
+.ExtraInfoCont{
+    height: 20%;
+    border-bottom: #333;
+    background-color: orchid;
+}

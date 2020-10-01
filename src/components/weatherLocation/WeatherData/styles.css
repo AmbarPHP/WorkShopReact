@@ -1,0 +1,47 @@
+.weatherDataCont{
+    background-color:  rgba(200,200, 200, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-family: 'Roboto'
+
+}
+.weatherTemperatureCont{
+    width:50%;
+    background-color:  rgba(500,400, 400, 0.5);
+    align-content: center;
+    vertical-align: middle;
+}
+
+ .weatherExtraInfCont{
+    width:50%;
+    /* para este div volvemos alinear sus spans en fila */
+    display: flex;
+    flex-direction: column;
+    background-color:  rgba(200,400, 400, 0.5);
+    font-size: 30px;
+    font-weight: bold;
+    align-content: center;
+    vertical-align: middle;
+   
+  
+}
+
+.temperature{
+    font-size: 30px;
+    font-weight: bold;
+    color: midnightblue;
+}
+.temperatureType{
+    font-size: 30px;
+    font-weight: bold;
+    color: midnightblue;
+}
+
+.extraInfoText{
+    color : #15355C;
+
+    }

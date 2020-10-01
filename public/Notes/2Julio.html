@@ -1,0 +1,30 @@
+
+[2020-07-02]
+==Array vs Objects ==
+
+Nobody seems to be explaining the difference between an array and an object.
+
+[] is declaring an array.
+
+{} is declaring an object.
+
+An array has all the features of an object with additional features (you can think of an array like a sub-class of an object) 
+where additional methods and capabilities are added in the Array sub-class.
+ In fact, typeof [] === "object" to further show you that an array is an object.
+
+ The additional features consist of a magic .length property that keeps track of the number of items in the array and a whole 
+ slew of methods for operating on the array such as .push(), .pop(), .slice(), .splice(), etc... You can see a list of array methods here.
+
+
+ An object gives you the ability to associate a property name with a value as in:
+
+ var x = {};
+x.foo = 3;
+x["whatever"] = 10;
+console.log(x.foo);      // shows 3
+console.log(x.whatever); // shows 10
+
+An array is an object so it has all the same capabilities of an object plus a bunch of additional features for managing an ordered, 
+sequential list of numbered indexes starting from 0 and going up to some length. Arrays are typically used for an ordered list of items 
+that are accessed by numerical index. And, because the array is ordered, there are lots of useful features to manage 
+the order of the list .sort() or to add or remove things from the list.
