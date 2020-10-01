@@ -2,17 +2,12 @@ import React from 'react';
 import './styles.css'
 
 
-const  Location= (props)=>{
-
-    console.log(props);
-    const city = props.city;
-    return (
-
+const  Location= ({city})=>{
+ 
+        return (
         <div className="locationCont">
-    <h1>{` ${city}`}</h1>
-</div>
-    );
-
-
+        <h1>{` ${city}`}</h1>
+        </div>
+        );
 }
 export default Location;

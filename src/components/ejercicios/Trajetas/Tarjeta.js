@@ -1,5 +1,6 @@
 import React from 'react';
 import './Tarjeta.css';
+import data from './Data';
 
 const Tarjeta = ({data}) => {
 

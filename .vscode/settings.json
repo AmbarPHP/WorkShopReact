@@ -1,0 +1,8 @@
+{
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 16,
+    "workbench.colorTheme": "Tomorrow Night Blue",
+    "emmet.includeLanguages": {
+        "javascript":"javascriptreact"
+    }
+}

@@ -1,0 +1,75 @@
+$break-small: 375px;
+$break-large: 1024px;
+$background_space: #1f3357;
+
+$media: (
+  'small-screens':  767px,
+  'medium-screens': 992px,
+  'wide-screens':  1200px
+) !default;
+
+
+@media (min-width: 576px) { 
+            .containerBackground {
+                height: 100%;
+                background-color: #fff;
+                color: #1f3357;
+            }
+}
+
+@mixin border_radius($r){
+    border-radius: $r;
+    -webkit-border-radius:$r;
+    -moz-border-radius:$r;
+    
+} 
+
+.menu{
+    color:#fff;
+}
+.firstrow{
+    background-color: green;
+}
+.aside{
+    background-color: rgb(231, 14, 14);
+}
+.two_center{
+    background-color: rgb(228, 136, 61);
+}
+
+.down_rows{
+    background-color: rgb(24, 111, 226);
+}
+
+// @mixin respond-to($media) {
+//     @if $media == small-screens {
+//       @media only screen and (max-width: $break-small) { 
+//         .containerBackground {
+//         width: 100%;
+//         background-color: $background_space;
+//         color: #fff;
+//         }
+//        }
+//     }
+//     @else if $media == medium-screens {
+//       @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { 
+//         .containerBackground {
+//         width: 100%;
+//         background-color: $background_space;
+//         color: #fff;
+//         }
+//        }
+//     }
+//     @else if $media == wide-screens {
+//       @media only screen and (min-width: $break-large) { 
+//         .containerBackground {
+//         width: 100%;
+//         background-color: $background_space;
+//         color: #fff;
+//         }
+//        }
+//     }
+//   }
+
+   
+  

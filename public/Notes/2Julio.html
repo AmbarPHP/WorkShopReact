@@ -28,3 +28,23 @@ An array is an object so it has all the same capabilities of an object plus a bu
 sequential list of numbered indexes starting from 0 and going up to some length. Arrays are typically used for an ordered list of items 
 that are accessed by numerical index. And, because the array is ordered, there are lots of useful features to manage 
 the order of the list .sort() or to add or remove things from the list.
+
+==== Rest Operator ===
+
+
+
+Hint 1
+This code
+
+const product = (n1, n2, n3) => {
+  const args = [n1, n2, n3];
+  return args.reduce((a, b) => a * b, 1);
+}
+console.log(product(2, 4, 6)); //48
+
+!! Can be written as such
+
+const product = (...n) => {
+    return n.reduce((a, b) => a * b, 1);
+  }
+  console.log(product(2, 4, 6)); //48

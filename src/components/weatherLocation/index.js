@@ -15,7 +15,7 @@ const data = {
 
 const WeatherLocation = () =>(
    <div className="weatherLocationCont">
-    <Location city="Argentina"></Location>
+    <Location city="Santiago"></Location>
     <WeatherData data={data}></WeatherData>
    </div>
    )

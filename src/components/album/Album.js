@@ -1,27 +1,41 @@
 import React from 'react';
+//para importar datos de un json debemos de, exportarlos como una constante
+import data from  './data.js'
 
 const Album = () =>{
 
+
+// const datos= data;
     let pictures=[];
 
    for(let i=0; i<4; i++){
           pictures.push(
-            <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" alt="Thumbnail [100%x225]" 
-                    
-                    src="" data-holder-rendered="true">
-                    </img>
-                    <div class="card-body">
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                      </div>
-                    </div>
+                  <div class="card mb-4 box-shadow">
+                  <div class="card-body">
+                  <div className = "ImgCont" > 
+                  <img src={data[i].avatar} alt={data[i].gender}></img>
+                  </div> 
+                  <p class="card-text">
+                  {data[i].first_name}
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  <div className = "ContenidoCont" >
+                  <span>{data[i].first_name} </span>
+                  <span>{data[i].last_name}</span>
+                  <span>{data[i].email}</span>
+                  <span>{data[i].country}</span>
+                  </div> 
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                   </div>
+                  <small class="text-muted">9 mins</small>
+                  <div className = "ExtraInfoCont" >extra info</div> 
+                  </div>
+                  </div>
+                  </div>
+
+
           );
       }
     return (

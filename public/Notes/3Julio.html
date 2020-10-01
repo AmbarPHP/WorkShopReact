@@ -1,0 +1,33 @@
+===Authentication flows===
+
+Authentication flows
+Most apps require that a user authenticate in some way to have access to data associated 
+with a user or other private content. 
+
+Typically the flow will look like this:
+
++The user opens the app.
++The app loads some authentication state from persistent storage (for example, AsyncStorage).
++When the state has loaded, the user is presented with either authentication screens or the main app, 
+depending on whether valid authentication state was loaded.
++When the user signs out, we clear the authentication state and send them back to authentication screens.
+Note: We say "authentication screens" because usually there is more than one. You may have a main screen 
+with a username and password field, another for "forgot password", and another set for sign up.
+
+#What we need
+This is the behavior that we want from the authentication flow:
+ when users sign in, we want to throw away the state of the authentication flow and unmount all of the screens 
+ related to authentication, and when we press the hardware back button we expect to not be able to go back to the authentication flow.
+
+#How it will work
+We can define different screens based on some condition. 
+For example, if the user is signed in, we can define Home, Profile, Settings etc. 
+If the user is not signed in, we can define SignIn and SignUp screens.
+
+https://reactnative.dev/docs/navigation
+
+
+
+QUE NECESITAMOS:
+
+SCHEMA, RESOLVER, Authentication
