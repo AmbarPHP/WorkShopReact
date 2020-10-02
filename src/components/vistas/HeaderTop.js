@@ -18,7 +18,7 @@ function HeaderTop (){
                     <div className="row clearfix justify-content-between">
                         <div className="col-lg-2 col-md-3 col-sm-12 col-xs-6">
                             <a className="logo" href="/">
-                                <img src={logo} alt="Fundación Española del Corazón"/>
+                                <img src={logo} alt="Angular, React y Vue"/>
                                 </a>
                         </div>
                     
@@ -26,15 +26,17 @@ function HeaderTop (){
                             <div className="dropdown">
                                 <button className="btn  dropdown-toggle toggleMenuTop toggleMenuTop" type="button" id="dropdownMenuButton" 
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                QUIENES SOMOS
+                                PRINCIPIOS BASICOS
                                 <FontAwesomeIcon icon={faAngleDown} size="2x"/>
                                 </button>
                                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a className="dropdown-item" href="/fec/saludo-institucional.html">Saludo institucional</a>
-                                <a className="dropdown-item" href="/fec/historia.html">Historia y Presidentes</a>
-                                <a className="dropdown-item" href="/fec/historia.html">Patronato y Estatutos</a>
-                                <a className="dropdown-item" href="/fec/historia.html">Asociaciones de pacientes</a>
-                                <a className="dropdown-item" href="/fec/historia.html">Alianzas/Convenios</a>
+                                <a className="dropdown-item" href="/fec/saludo-institucional.html">Front End</a>
+                                <a className="dropdown-item" href="/fec/historia.html">Javascript</a>
+                                <a className="dropdown-item" href="/fec/historia.html">Node</a>
+                                <a className="dropdown-item" href="/fec/historia.html">CSS</a>
+                                <a className="dropdown-item" href="/fec/historia.html">HTML</a>
+                                <a className="dropdown-item" href="/fec/historia.html">Angular</a>
+                                <a className="dropdown-item" href="/fec/historia.html">React</a>
                                 </div>
                             </div>
                         </div> 
@@ -47,8 +49,8 @@ function HeaderTop (){
                                 </button>
                                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a className="dropdown-item" href="/fec/saludo-institucional.html">Calendario de eventos</a>
-                                <a className="dropdown-item" href="/fec/historia.html">Semana del Corazón</a>
-                                <a className="dropdown-item" href="/fec/historia.html">Día Mundial del Corazón</a>
+                                <a className="dropdown-item" href="/fec/historia.html">Foros</a>
+                                <a className="dropdown-item" href="/fec/historia.html">Lista de paginas referencia</a>
                                 <a className="dropdown-item" href="/fec/historia.html">Foro</a>
                                 <a className="dropdown-item" href="/fec/historia.html">Campañas</a>
                                 </div>
@@ -56,8 +58,9 @@ function HeaderTop (){
                         </div> 
                         <div className="col--lg-auto col-md-auto col-sm-12 col-xs-12 header-top-widget headerwidget-style2 ">   
                             <div className="dropdown">
-                                <button className="btn  dropdown-toggle toggleMenuTop" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                PROGRAMAS
+                                <button className="btn  dropdown-toggle toggleMenuTop" 
+                                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                EJERCICIOS
                                 <FontAwesomeIcon icon={faAngleDown} size="2x"/>
                                 </button>
                                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -73,7 +76,7 @@ function HeaderTop (){
 
                             <div className="dropdown">
                                 <button className="btn  dropdown-toggle toggleMenuTop" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                PRENSA
+                                CALCULO INFONAVIT
                                 <FontAwesomeIcon icon={faAngleDown} size="2x"/>
                                 </button>
                                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -89,7 +92,7 @@ function HeaderTop (){
 
                             <div className="dropdown">
                                 <button className="btn  dropdown-toggle toggleMenuTop" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                COLABORA
+                                GITHUB
                                 <FontAwesomeIcon icon={faAngleDown} size="2x"/>
                                 </button>
                                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">

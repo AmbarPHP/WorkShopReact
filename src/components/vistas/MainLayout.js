@@ -31,7 +31,7 @@ const MainLayout =()=>{
           </div>
           
          {/* <WeatherLocation></WeatherLocation> */}
-         <CalculoHipotecario></CalculoHipotecario>
+        
             <div className="row align-items-center ">
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 containerBackground ">
                       <Footer></Footer>

@@ -11,11 +11,11 @@ import {
     faYoutube,
     faFacebook,
     faTwitter,
-    faInstagram,
-    faFlipboard
+    faGithub,
+     faFlipboard
   } from "@fortawesome/free-brands-svg-icons";
 
-function NavBar2 (){
+function HeaderBar (){
 
   return (
 
@@ -26,9 +26,9 @@ function NavBar2 (){
 		
                 <div className="custom">
                     <div className="widget-tags">
-                    <a href="/actualidad/otras.html">Campañas</a>
-                    <a href="/participa-en-la-fundacion/ciencia-cardiovascular.html">Revista</a>
-                    <a href="/newsletter.html">Newsletter</a>
+                    <a href="/actualidad/otras.html">WorkShops</a>
+                    <a href="/participa-en-la-fundacion/ciencia-cardiovascular.html">Lecturas</a>
+                    <a href="/newsletter.html">Ejercicios</a>
                     </div>
                 </div>
 	        </div>
@@ -57,11 +57,11 @@ function NavBar2 (){
             <div className="">
                 <div className="custom">
                     <ul className="social-icons">
-                        <li><a rel="noopener noreferrer" href="https://www.facebook.com/saludcardiovascular" target="_blank">  <FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
-                        <li><a rel="noopener noreferrer" href="https://twitter.com/cuidarcorazon" target="_blank"><FontAwesomeIcon icon={faTwitter} size="2x" /></a></li>
-                        <li><a rel="noopener noreferrer" href="https://www.flickr.com/photos/fundacion-espanola-del-corazon/" target="_blank"><FontAwesomeIcon icon={faFlipboard} size="2x" /></a></li>
-                        <li><a rel="noopener noreferrer" href="https://www.youtube.com/user/fundaciondelcorazon" target="_blank"><FontAwesomeIcon icon={faYoutube} size="2x" /></a></li>
-                        <li><a rel="noopener noreferrer" href="https://www.instagram.com/cuidarcorazon/" target="_blank"><FontAwesomeIcon icon={faInstagram} size="2x" /></a></li>
+                        <li><a rel="noopener noreferrer" href="https://www.facebook.com/pperllamarrina1" target="_blank">  <FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
+                        <li><a rel="noopener noreferrer" href="https://twitter.com/Ambar_de_PHP" target="_blank"><FontAwesomeIcon icon={faTwitter} size="2x" /></a></li>
+                        <li><a rel="noopener noreferrer" href="https://www.flickr.com/photos/fundacion--del-corazon/" target="_blank"><FontAwesomeIcon icon={faFlipboard} size="2x" /></a></li>
+                        <li><a rel="noopener noreferrer" href="https://www.youtube.com/" target="_blank"><FontAwesomeIcon icon={faYoutube} size="2x" /></a></li>
+                        <li><a rel="noopener noreferrer" href="https://github.com/AmbarPHP" target="_blank"><FontAwesomeIcon icon={faGithub} size="2x" /></a></li>
                         <li><a rel="noopener noreferrer" href="/contacto.html"><FontAwesomeIcon icon={faEnvelopeSquare} size="2x"/></a></li>
                     </ul>
                 </div>
@@ -75,7 +75,7 @@ function NavBar2 (){
 );
 }
 
-export default NavBar2;
+export default HeaderBar;
 
 
 
