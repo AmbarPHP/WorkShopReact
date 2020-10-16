@@ -51,14 +51,14 @@ import React from "react";
 function TablaAmortizacionInfonavit(props) {
   let Amortizacion = props.data;
   let rows = [];
-  let sumatoria = [];
+  //let sumatoria = [];
   let totales = [];
   
   //const [tabla, setTabla] = useState([]);
 
   for (let i = 0; Amortizacion.deudaInicial[i]>0; i++) {
     let numeroPeriodo=i+1;
-    if (i%12==0){
+    if (i%12===0){
       rows.push(
       <tr>
         <td colSpan="11">{"-----------------------"+(i/12)+" año(s)---------------------------"}</td>

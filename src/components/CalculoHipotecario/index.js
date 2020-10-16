@@ -2,7 +2,7 @@ import React from "react";
 import TablaAmortizacion from "./TablaAmortizacion";
 
 function ChecarMontoInicial(deuda, valorPagoAnual, interesAnual){
-    debugger;
+    //debugger;
 if(valorPagoAnual<deuda){
     return valorPagoAnual;
 }
@@ -26,7 +26,7 @@ function calcularInteres(deuda) {
   //cambiar por while
   let i = 0;
   while(  calculoAmortizacion.deudaInicial[i]>0){
-      debugger;
+      //debugger;
             calculoAmortizacion.pagoInteresAnual[i] = calculoAmortizacion.deudaInicial[i] * calculoAmortizacion.interes;
             calculoAmortizacion.pagoACapital[i] = capital[i];
             calculoAmortizacion.pagosAnuales[i] = ChecarMontoInicial(calculoAmortizacion.deudaInicial[i],Math.round(calculoAmortizacion.pagoInteresAnual[i]+calculoAmortizacion.pagoACapital[i]),calculoAmortizacion.pagoInteresAnual[i]);

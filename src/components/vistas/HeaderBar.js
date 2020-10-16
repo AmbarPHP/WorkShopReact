@@ -1,81 +1,128 @@
+import React from "react";
+import { Link } from "react-router-dom";
 
-import React from 'react';
-// import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
-import './style.scss';
-import './estilo.scss';
+import {
+  Nav,
+  NavDropdown,
+  Navbar,
+  Form,
+  FormControl,
+  Button,
+} from "react-bootstrap";
 
+import "./style.scss";
+import "./estilo.scss";
 // get our fontawesome imports
-import {  faEnvelopeSquare, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faYoutube,
-    faFacebook,
-    faTwitter,
-    faGithub,
-     faFlipboard
-  } from "@fortawesome/free-brands-svg-icons";
+  faFacebook,
+  faTwitter,
+  faGithub,
+  faPinterest,
+  faWhatsapp,
+  faGoogle,
+} from "@fortawesome/free-brands-svg-icons";
 
-function HeaderBar (){
-
+function HeaderBar() {
   return (
+    <div className="header-bar">
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link>
+              <Link to="/home"> Home </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link to="/login"> Login </Link>
+            </Nav.Link>
 
-<div className="header-bar">
-    <div className="container">
-    	<div className="row">
-            <div className="col-md-4 col-sm-4 wrp-one">
-		
-                <div className="custom">
-                    <div className="widget-tags">
-                    <a href="/actualidad/otras.html">WorkShops</a>
-                    <a href="/participa-en-la-fundacion/ciencia-cardiovascular.html">Lecturas</a>
-                    <a href="/newsletter.html">Ejercicios</a>
-                    </div>
-                </div>
-	        </div>
-            <div className="col-md-4 col-sm-3 col-xs-6 wrp-two">
-                <div className="header-widget">
-                        <div className="widget-search">
-                                <form action="/actualidad/eventos.html" method="post" className="hidden-xs">
-                                    <input name="searchword" id="mod-search-searchword37" className="search-query" type="text" placeholder="Buscar..."/>
-                                    <button type="submit" ><FontAwesomeIcon icon={faSearch} size="1x"/></button>
-                                    <input type="hidden" name="task" value="search"/>
-                                    <input type="hidden" name="option" value="com_search"/>
-                                    <input type="hidden" name="Itemid" value="233"/>
-                                </form>
-                                {/* <ul className="social-icons visible-xs pull-right">
-                                    <li>
-                                        <a  role="button" data-toggle="collapse" 
-                                            href="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">
-                                       <FontAwesomeIcon icon={faSearch} size="2x"/>
-                                        </a>
-                                    </li>
-                                </ul> */}
-                        </div>
-                </div>	
-            </div>
+            <NavDropdown title="Accesos" id="basic-nav-dropdown">
+              <NavDropdown.Item>
+                <Link to="/calendario"> Calendario </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/hipoteca"> Hipoteca</Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/wheather"> Wheather </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
 
-            <div className="">
-                <div className="custom">
-                    <ul className="social-icons">
-                        <li><a rel="noopener noreferrer" href="https://www.facebook.com/pperllamarrina1" target="_blank">  <FontAwesomeIcon icon={faFacebook} size="2x" /></a></li>
-                        <li><a rel="noopener noreferrer" href="https://twitter.com/Ambar_de_PHP" target="_blank"><FontAwesomeIcon icon={faTwitter} size="2x" /></a></li>
-                        <li><a rel="noopener noreferrer" href="https://www.flickr.com/photos/fundacion--del-corazon/" target="_blank"><FontAwesomeIcon icon={faFlipboard} size="2x" /></a></li>
-                        <li><a rel="noopener noreferrer" href="https://www.youtube.com/" target="_blank"><FontAwesomeIcon icon={faYoutube} size="2x" /></a></li>
-                        <li><a rel="noopener noreferrer" href="https://github.com/AmbarPHP" target="_blank"><FontAwesomeIcon icon={faGithub} size="2x" /></a></li>
-                        <li><a rel="noopener noreferrer" href="/contacto.html"><FontAwesomeIcon icon={faEnvelopeSquare} size="2x"/></a></li>
-                    </ul>
-                </div>
-            </div>
-            
-        </div>
-    </div>    		
-</div>
+          <div className="custom">
+            <ul className="social-icons">
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/pperllamarrina1"
+                  target="_blank"
+                >
+                  {" "}
+                  <FontAwesomeIcon icon={faFacebook} size="2x" />
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  href="https://twitter.com/Ambar_de_PHP"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faTwitter} size="2x" />
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  href="https://www.pinterest.com.mx/pperllamarrina1/_saved/"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faPinterest} size="2x" />
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  href="https://web.whatsapp.com/"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  href="https://github.com/AmbarPHP"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faGithub} size="2x" />
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  href="https://keep.google.com/u/0/"
+                >
+                  <FontAwesomeIcon icon={faGoogle} size="2x" />
+                </a>
+              </li>
+            </ul>
+          </div>
 
-
-);
+          <Form inline>
+            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+            <Button variant="outline-success">Search</Button>
+          </Form>
+        </Navbar.Collapse>
+      </Navbar>
+    </div>
+  );
 }
 
 export default HeaderBar;
-
-
-

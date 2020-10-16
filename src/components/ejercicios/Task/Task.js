@@ -15,6 +15,8 @@ const Task = () => {
 
   const [showCompleted, setShowCompleted]=useState(true);
 
+
+
   //cambiar el estado de las tareas
   function ToggleTask(task){
       settaskItems(

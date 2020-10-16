@@ -36,7 +36,7 @@ function setValoresPComplementario(periodos){
 function SaldoActualizado( abonos, cargos,deudaInicial, periodo) {
   
   if (periodo>=43){
-    debugger;
+    //debugger;
   }
   let pagoreal=abonos-cargos;
   if (pagoreal < deudaInicial) {
@@ -76,7 +76,7 @@ function calcularAmortizacion(deuda) {
 
   //cambiar por while
   let i = 0;
-  let salir =false;
+  //let salir =false;
   while (amortizacion.deudaInicial[i] > 0 ) {
    
     amortizacion.pagoInteresMensual[i] =

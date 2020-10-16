@@ -2,6 +2,7 @@ import React from 'react';
 import './style.scss';
 import './estilo.scss';
 import logo from '../../img/logo.png';
+import { Link } from "react-router-dom";
 
 // get our fontawesome imports
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
@@ -36,7 +37,7 @@ function HeaderTop (){
                                 <a className="dropdown-item" href="/fec/historia.html">CSS</a>
                                 <a className="dropdown-item" href="/fec/historia.html">HTML</a>
                                 <a className="dropdown-item" href="/fec/historia.html">Angular</a>
-                                <a className="dropdown-item" href="/fec/historia.html">React</a>
+                                <a className="dropdown-item" href="/fec/historia.html"><Link to='react_principios'>React</Link></a>
                                 </div>
                             </div>
                         </div> 
